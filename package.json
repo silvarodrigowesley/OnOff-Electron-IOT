@@ -1,0 +1,42 @@
+{
+  "name": "liga-desliga-app",
+  "version": "1.0.0",
+  "description": "Um aplicativo feito com Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.5.1",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mqtt": "^5.10.4",
+    "ws": "^8.18.1"
+  },
+  "build": {
+    "appId": "com.seuapp.ligadesliga",
+    "productName": "Liga Desliga App",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/sara.ico"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "assets/sara.icns"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "assets/sara.png"
+    }
+  }
+}

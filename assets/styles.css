@@ -1,0 +1,87 @@
+
+    /* Estilos gerais da página */
+    body {
+        background: #121212;
+        color: #fff;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: #00c2ff;
+        text-shadow: 0 0 10px rgba(0, 194, 255, 0.7);
+        margin-bottom: 20px;
+    }
+
+    /* Estilos dos botões */
+    button {
+        width: 160px;
+        height: 60px;
+        font-size: 18px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Efeito de gradiente para o botão ligado */
+    .liga {
+        background: linear-gradient(135deg, #4caf50, #00e676);
+        color: white;
+    }
+
+    /* Efeito de gradiente para o botão desligado */
+    .desliga {
+        background: linear-gradient(135deg, #f44336, #e53935);
+        color: white;
+    }
+
+    /* Efeitos ao passar o mouse (hover) */
+    button:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Efeito de foco no botão */
+    button:focus {
+        box-shadow: 0 0 10px rgba(0, 204, 255, 0.8);
+    }
+
+    /* Adicionando um "brilho" nas bordas ao clicar */
+    button:active {
+        transform: scale(0.98);
+    }
+
+    /* Animação de brilho na borda */
+    button:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background: rgba(0, 204, 255, 0.2);
+        transition: width 0.5s, height 0.5s;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    button:active:after {
+        width: 0;
+        height: 0;
+    }
+
