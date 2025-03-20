@@ -1,0 +1,57 @@
+# 🚀 Minha Aplicação MQTT + WebSocket + Electron
+
+## 📌 Descrição
+Esta aplicação permite a comunicação entre um servidor Node.js, clientes WebSocket e um broker MQTT. O objetivo principal é enviar e receber mensagens MQTT, transmitindo o status em tempo real para uma interface web e um aplicativo Electron.
+
+## 🛠️ Tecnologias Utilizadas
+- **Node.js** - Servidor backend
+- **Express** - API REST
+- **MQTT.js** - Comunicação com broker MQTT
+- **WebSocket** - Comunicação em tempo real
+- **Electron** - Aplicativo desktop
+
+
+
+## ⚡ Funcionalidades
+✅ Publica e recebe mensagens MQTT
+✅ Atualiza status em tempo real via WebSocket
+✅ Interface desktop via Electron
+✅ Configuração dinâmica de credenciais WiFi via MQTT
+
+## 📥 Instalação e Uso
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/minha-aplicacao.git
+   cd minha-aplicacao
+   ```
+2. Instale as dependências:
+   ```sh
+   npm install
+   ```
+3. Configure o arquivo `.env` (se necessário)
+4. Inicie a aplicação:
+   ```sh
+   npm start
+   ```
+5. Para executar o Electron:
+   ```sh
+   npm run electron
+   ```
+
+## 🔧 Comandos Úteis
+- **Rodar o servidor**: `npm start`
+- **Rodar em modo desenvolvimento**: `npm run dev`
+- **Gerar build do Electron**: `npm run build`
+
+## 🚀 Como Funciona?
+1. O **Node.js** inicia um servidor Express para lidar com requisições REST.
+2. O **WebSocket** mantém uma comunicação bidirecional entre o frontend e o backend.
+3. O **MQTT.js** gerencia a conexão com um broker MQTT para publicar e receber mensagens.
+4. O **Electron** cria um aplicativo desktop que interage com o servidor e o MQTT.
+
+## 📝 Licença
+Este projeto é de código aberto e está sob a licença MIT.
+
+---
+✉️ Criado por **WESLEY SILVA** - Entre em contato para melhorias ou sugestões! 🚀
+
