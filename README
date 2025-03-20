@@ -21,8 +21,8 @@ Esta aplicação permite a comunicação entre um servidor Node.js, clientes Web
 ## 📥 Instalação e Uso
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu-usuario/minha-aplicacao.git
-   cd minha-aplicacao
+   git clone git@github.com:silvarodrigowesley/OnOff-Electron-IOT.git
+   cd OnOff-Electron-IOT
    ```
 2. Instale as dependências:
    ```sh
