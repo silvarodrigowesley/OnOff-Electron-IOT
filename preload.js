@@ -9,5 +9,11 @@ contextBridge.exposeInMainWorld("api", {
             return;
         }
         ipcRenderer.on("resposta-do-main", (_event, resposta) => callback(resposta));
-    }
+    },
+    // Receber o IP local da máquina
+    obterIPLocal: (callback) => {
+        ipcRenderer.once('local-ip', (_event, ip) => {
+            callback(ip);
+        });
+    },
 });

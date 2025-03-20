@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   
+    <link rel="icon" type="image/x-icon" href="assets/sara.ico"/>
+    <link rel="stylesheet" type="text/css" href="assets/styles.css"/>
+
+   
+
+    <title>Controle de Luzes</title>
+    
+    
+</head>
+<body>
+    <h1>Controle de Luzes</h1>
+    <button class="top-right" id="openWifiForm">Cadastrar WiFi</button>
+    
+    <div class="overlay" id="overlay"></div>
+    <div class="wifi-form" id="wifiForm">
+        <input type="text" id="wifiSSID" placeholder="Nome da Rede (SSID)">
+        <input type="password" id="wifiPassword" placeholder="Senha">
+        <button onclick="enviarWifi()">Salvar</button>
+    </div>
+
+    <div class="description">
+        <button id="btn1" class="desliga">OFF-1</button>
+       <button id="btn2" class="desliga">OFF-2</button>
+       <div>
+            <h2 style="display: inline;">Status do Servidor: </h2>
+            <p id="status" style="display: inline;">Aguardando conexão...</p>
+       </div>
+       <p></p>
+       <div>
+           <h2 style="display: inline;">IP Local: </h2>
+           <p id="statusIp" style="display: inline;" >Aguardando Ip Local...</p>
+       </div>
+       <p></p>
+       <div>
+           <h2 style="display: inline;">Status Reles: </h2>
+           <p id="statusReles" style="display: inline;">Aguardando Status dos Reles...</p>
+        </div>
+        <p></p>
+   </div>
+    
+
+
+         
+      
+      
+
+
+    <script
+    
+    src="renderer.js">
+
+
+    </script>
+</body>
+</html>
