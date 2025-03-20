@@ -37,7 +37,7 @@ function createWindow() {
         if (process.platform !== 'darwin') app.quit();
     });
 
-    mainWindow.webContents.openDevTools();
+    //mainWindow.webContents.openDevTools();
 }
 
 
